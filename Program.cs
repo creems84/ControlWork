@@ -3,7 +3,7 @@
 //либо задать на старте выполнения алгоритма. 
 //При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами.
 
-static string[] ReadInputArray()
+string[] ReadInputArray()
 {
     Console.WriteLine("Введите элементы массива через пробел:");
     string input = Console.ReadLine();
@@ -11,7 +11,7 @@ static string[] ReadInputArray()
     return inputArray;
 }
 
-static string[] FilterStrings(string[] inputArray)
+string[] FilterStrings(string[] inputArray)
 {
     int count = 0;
     
@@ -38,7 +38,7 @@ static string[] FilterStrings(string[] inputArray)
     return resultArray;
 }
 
-static void PrintResultArray(string[] resultArray)
+void PrintResultArray(string[] resultArray)
 {
     Console.WriteLine("Новый массив:");
     for (int i = 0; i < resultArray.Length; i++)
